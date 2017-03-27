@@ -10,6 +10,10 @@ object MessagePrinterActor {
   case class RequestMessage(content: String) extends Message
 }
 
+/**
+  * Actor that logs content of messages that it receives.
+  * It only supports message of type 'RequestMessage' and rest is ignored.
+  */
 class MessagePrinterActor extends Actor {
   val logger = LoggerFactory getLogger MessagePrinterActor.getClass
 
