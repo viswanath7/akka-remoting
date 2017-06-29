@@ -14,8 +14,6 @@
     </encoder>
   </appender>
   <logger name="akka" level="DEBUG" />
-  <logger name="io.gatling.http.ahc" level="TRACE" />
-  <logger name="io.gatling.http.response" level="TRACE" />
   <root level="DEBUG">
     <appender-ref ref="CONSOLE"/>
     <appender-ref ref="FILE"/>
